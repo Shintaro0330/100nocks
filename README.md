@@ -20,6 +20,8 @@ HTTP（HyperText Transfer Protocol）はWeb通信の仕組みで、ブラウザ�
 main.js
 console.log("Hello,JavaScript!");
 
+<img width="612" height="713" alt="image" src="https://github.com/user-attachments/assets/7247bc82-3c41-4b2c-83da-e12a845423fe" />
+
 
 
 
