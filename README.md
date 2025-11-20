@@ -63,6 +63,7 @@ var data = ['red','black','white'];
 for (var key in data){
     console.log(data[key]);
 }
+<img width="405" height="628" alt="image" src="https://github.com/user-attachments/assets/868bc8c2-57a8-4e58-ab52-1df4f4d85193" />
 
 
 
