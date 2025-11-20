@@ -43,11 +43,19 @@ console.log(clothes[2]);
 <img width="286" height="642" alt="image" src="https://github.com/user-attachments/assets/4b5c1f42-14f3-43d1-8faa-be388bdca036" />
 
 問題32
-if(x+y>=x+z){
+var alphabet={
+    x:10,
+    y:9,
+    z:8
+};
+
+
+if(alphabet.x + alphabet.y >= alphabet.x + alphabet.z){
     console.log('yはzより大きい');
 }else{
-    console.log('yはzより小さい')
+    console.log('yはzより小さい');
 }
+
 
 
 
