@@ -58,6 +58,12 @@ if(alphabet.x + alphabet.y >= alphabet.x + alphabet.z){
 
 <img width="503" height="625" alt="image" src="https://github.com/user-attachments/assets/57b3adcd-110c-4905-a286-693664a30e6a" />
 
+問題33
+var data = ['red','black','white'];
+for (var key in data){
+    console.log(data[key]);
+}
+
 
 
 
