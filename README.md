@@ -40,6 +40,8 @@ console.log(box.role(clothes[2]));
 
 console.log(clothes[2]);
 
+<img width="286" height="642" alt="image" src="https://github.com/user-attachments/assets/4b5c1f42-14f3-43d1-8faa-be388bdca036" />
+
 
 
 
