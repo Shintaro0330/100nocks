@@ -124,6 +124,7 @@ lastButton.addEventListener('click',()=>{
 </body>
 </html>
 
+<img width="568" height="374" alt="image" src="https://github.com/user-attachments/assets/b2b3271d-e9ed-4a07-bd75-42ee2afad8ed" />
 
 
 
