@@ -168,7 +168,9 @@ changebox.addEventListener('click',() =>{
     msg.textContent='Hello';
 });
 
+<img width="515" height="311" alt="image" src="https://github.com/user-attachments/assets/fa6b1b49-0271-430d-ac51-398a2d85b35e" />
 
+<img width="449" height="279" alt="image" src="https://github.com/user-attachments/assets/5043f985-2703-4f77-9f3b-903491f3ecc1" />
 
 
 
