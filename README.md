@@ -91,6 +91,40 @@ button.addEventListener('click',() =>{
 
 <img width="299" height="677" alt="image" src="https://github.com/user-attachments/assets/55ad1260-d93b-4380-84d2-13a17eba306c" />
 
+問題36
+main.js
+const button = document.querySelector('#myBtn');
+button.addEventListener('click',() =>{
+    console.log('ボタンがクリックされました');
+})
+
+const inputBox = document.querySelector('#myinput');
+const outputDiv= document.querySelector('#displayArea')
+const lastButton = document.querySelector('#showBtn')
+
+lastButton.addEventListener('click',()=>{
+    const value = inputBox.value;
+    outputDiv.textContent=value
+})
+
+04.html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Git練習ページ</title>
+</head>
+<body>
+  <button id="myBtn">ホバーで色が変わります</button>
+  <input type="text" id="myinput">
+  <div id ="displayArea"></div>
+  <button id="showBtn">値を表示</button>
+  <link rel="stylesheet" type="text/css" href="b.css">
+  <script src="main.js"></script>
+</body>
+</html>
+
+
 
 
 
