@@ -65,8 +65,29 @@ for (var key in data){
 }
 <img width="405" height="628" alt="image" src="https://github.com/user-attachments/assets/868bc8c2-57a8-4e58-ab52-1df4f4d85193" />
 
+問題34
+問題31と同様
 
+問題35
+main.js
+const button = document.querySelector('#myBtn');
+button.addEventListener('click',() =>{
+    console.log('ボタンがクリックされました');
+})
 
+04.html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Git練習ページ</title>
+</head>
+<body>
+ <button id="myBtn">ホバーで色が変わります</button>
+ <link rel="stylesheet" type="text/css" href="b.css">
+ <script src="main.js"></script>
+</body>
+</html>
 
 
 
