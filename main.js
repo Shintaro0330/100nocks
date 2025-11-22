@@ -11,3 +11,10 @@ lastButton.addEventListener('click',()=>{
     const value = inputBox.value;
     outputDiv.textContent=value
 })
+
+const msg=document.querySelector("#msg");
+const changebox=document.querySelector("#change");
+
+changebox.addEventListener('click',() =>{
+    msg.textContent='Hello';
+});
