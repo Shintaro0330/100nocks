@@ -126,6 +126,48 @@ lastButton.addEventListener('click',()=>{
 
 <img width="568" height="374" alt="image" src="https://github.com/user-attachments/assets/b2b3271d-e9ed-4a07-bd75-42ee2afad8ed" />
 
+問題37
+04.html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Git練習ページ</title>
+</head>
+<body>
+  <button id="myBtn">ホバーで色が変わります</button>
+  <input type="text" id="myinput">
+  <div id ="displayArea"></div>
+  <button id="showBtn">値を表示</button>
+  <p id="msg">こんにちは</p>
+  <button id="change">押してみてね</button>
+  <link rel="stylesheet" type="text/css" href="b.css">
+  <script src="main.js"></script>
+</body>
+</html>
+
+main.js
+const button = document.querySelector('#myBtn');
+button.addEventListener('click',() =>{
+    console.log('ボタンがクリックされました');
+})
+
+const inputBox = document.querySelector('#myinput');
+const outputDiv= document.querySelector('#displayArea')
+const lastButton = document.querySelector('#showBtn')
+
+lastButton.addEventListener('click',()=>{
+    const value = inputBox.value;
+    outputDiv.textContent=value
+})
+
+const msg=document.querySelector("#msg");
+const changebox=document.querySelector("#change");
+
+changebox.addEventListener('click',() =>{
+    msg.textContent='Hello';
+});
+
 
 
 
