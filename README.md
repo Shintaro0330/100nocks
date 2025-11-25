@@ -172,6 +172,78 @@ changebox.addEventListener('click',() =>{
 
 <img width="449" height="279" alt="image" src="https://github.com/user-attachments/assets/5043f985-2703-4f77-9f3b-903491f3ecc1" />
 
+問題39
+04.html
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Git練習ページ</title>
+</head>
+<body>
+  <button id="myBtn">ホバーで色が変わります</button>
+  <input type="text" id="myinput">
+  <div id ="displayArea"></div>
+  <button id="showBtn">値を表示</button>
+  <p id="msg">こんにちは</p>
+  <button id="change">押してみてね</button>
+
+  <input type="text" id="inputvalue">
+  <button onclick="addItem()">追加</button>
+  <ul id="itemList"></ul>
+  <link rel="stylesheet" type="text/css" href="b.css">
+  <script src="main.js"></script>
+</body>
+</html>
+
+main.js
+
+const button = document.querySelector('#myBtn');
+button.addEventListener('click',() =>{
+    console.log('ボタンがクリックされました');
+})
+
+const inputBox = document.querySelector('#myinput');
+const outputDiv= document.querySelector('#displayArea')
+const lastButton = document.querySelector('#showBtn')
+
+lastButton.addEventListener('click',()=>{
+    const value = inputBox.value;
+    outputDiv.textContent=value
+})
+
+const msg=document.querySelector("#msg");
+const changebox=document.querySelector("#change");
+
+changebox.addEventListener('click',() =>{
+    msg.textContent='Hello';
+});
+
+const items=[];
+
+function addItem(){
+    const input = document.getElementById('inputvalue');
+    const value = input.value.trim();
+
+    if (value !==""){
+        items.push(value);
+        displayList();
+        input.value="";
+    }
+}
+
+function displayList(){
+    const list = document.getElementById('itemList');
+    list.innserHTML ="";
+
+    for (let i =0; i<items.length; i++){
+        const li =document.createElement('li');
+        li.textContent=items[i];
+        list.appendChild(li);
+    }
+}
+
 
 
 
