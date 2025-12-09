@@ -244,6 +244,12 @@ function displayList(){
     }
 }
 
+問題48
+<img width="408" height="638" alt="image" src="https://github.com/user-attachments/assets/21ccac18-2bd7-4de1-a56e-fcddc484a578" />
+
+<img width="359" height="85" alt="image" src="https://github.com/user-attachments/assets/b5658ab8-01e6-486e-a3c9-34efdc8249ab" />
+
+
 
 
 
