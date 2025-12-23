@@ -249,9 +249,14 @@ function displayList(){
 
 <img width="359" height="85" alt="image" src="https://github.com/user-attachments/assets/b5658ab8-01e6-486e-a3c9-34efdc8249ab" />
 
+問題51
 
 
 
+<img width="710" height="368" alt="スクリーンショット 2025-12-20 230357" src="https://github.com/user-attachments/assets/5a858d84-b299-4f41-8f58-96c478f9897d" />
 
+<img width="592" height="171" alt="スクリーンショット 2025-12-20 230602" src="https://github.com/user-attachments/assets/874eb590-2053-4260-8fdc-c350113146d1" />
+
+<img width="627" height="164" alt="スクリーンショット 2025-12-20 230625" src="https://github.com/user-attachments/assets/7888a034-2d70-4eca-9bd1-890efae557c7" />
 
 
