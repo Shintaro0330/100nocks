@@ -320,6 +320,9 @@ app.post("/api/logout", (req, res) => {
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
 
 
+<img width="892" height="179" alt="image" src="https://github.com/user-attachments/assets/a7e4e475-99bc-4b55-8742-60a18c8475b7" />
+
+
 問題69
 CSRF
 
