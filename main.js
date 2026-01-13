@@ -1,44 +1,53 @@
-const button = document.querySelector('#myBtn');
-button.addEventListener('click',() =>{
-    console.log('ボタンがクリックされました');
-})
+const express = require("express");
+const session = require("express-session");
 
-const inputBox = document.querySelector('#myinput');
-const outputDiv= document.querySelector('#displayArea')
-const lastButton = document.querySelector('#showBtn')
+const app = express();
+const PORT = 3000;
 
-lastButton.addEventListener('click',()=>{
-    const value = inputBox.value;
-    outputDiv.textContent=value
-})
+app.use(express.json());
 
-const msg=document.querySelector("#msg");
-const changebox=document.querySelector("#change");
+// セッション（＝CookieにセッションIDを入れる仕組み）
+app.use(
+  session({
+    name: "sid", // Cookie名（デフォルトは connect.sid）
+    secret: "dev-secret-change-me",
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      httpOnly: true,     // JSから読めない（XSS対策）
+      secure: false,      // HTTPSなら true（開発HTTPでは false）
+      sameSite: "lax",    // CSRF対策
+      maxAge: 1000 * 60 * 30, // 30分
+    },
+  })
+);
 
-changebox.addEventListener('click',() =>{
-    msg.textContent='Hello';
+// ログイン（例）：ログイン済み情報をセッションに保存
+app.post("/api/login", (req, res) => {
+  const { username } = req.body;
+  if (!username) return res.status(400).json({ message: "username is required" });
+
+  req.session.user = { username };
+  res.json({ message: "logged in", user: req.session.user });
 });
 
-const items=[];
-
-function addItem(){
-    const input = document.getElementById('inputvalue');
-    const value = input.value.trim();
-
-    if (value !==""){
-        items.push(value);
-        displayList();
-        input.value="";
-    }
+// 認証チェック
+function requireLogin(req, res, next) {
+  if (req.session && req.session.user) return next();
+  return res.status(401).json({ message: "login required" });
 }
 
-function displayList(){
-    const list = document.getElementById('itemList');
-    list.innserHTML ="";
+// 認証が必要なAPI
+app.get("/api/me", requireLogin, (req, res) => {
+  res.json({ message: "ok", user: req.session.user });
+});
 
-    for (let i =0; i<items.length; i++){
-        const li =document.createElement('li');
-        li.textContent=items[i];
-        list.appendChild(li);
-    }
-}
+// ログアウト（セッション破棄）
+app.post("/api/logout", (req, res) => {
+  req.session.destroy(err => {
+    if (err) return res.status(500).json({ message: "logout failed" });
+    res.json({ message: "logged out" });
+  });
+});
+
+app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
