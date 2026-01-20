@@ -338,3 +338,15 @@ CookieにSameSite属性を付与
 別のサイトからのリクエストではcookieを送信させないようにする
 
 
+問題72
+<img width="532" height="660" alt="image" src="https://github.com/user-attachments/assets/15b184b1-33a6-4213-a1b3-1129545ed5c6" />
+
+<img width="537" height="670" alt="image" src="https://github.com/user-attachments/assets/e34c8703-efa6-45a2-b356-6b338c66b607" />
+
+
+
+
+
+
+
+
