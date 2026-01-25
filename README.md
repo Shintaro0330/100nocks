@@ -346,6 +346,14 @@ CookieにSameSite属性を付与
 <img width="568" height="643" alt="image" src="https://github.com/user-attachments/assets/ccd424aa-6196-47fa-b553-4535ae7014f5" />
 
 
+問題84
+
+<img width="938" height="601" alt="image" src="https://github.com/user-attachments/assets/a0b52e44-b72d-47ed-9ea8-8a7dd5a69738" />
+
+<img width="868" height="442" alt="image" src="https://github.com/user-attachments/assets/fa76f062-3b11-4096-b06b-511398944952" />
+
+<img width="525" height="604" alt="image" src="https://github.com/user-attachments/assets/62a19fbf-74c9-46e9-bec2-3dc67f0a306c" />
+
 
 
 
