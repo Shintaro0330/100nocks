@@ -363,8 +363,24 @@ CookieにSameSite属性を付与
 
 <img width="521" height="284" alt="image" src="https://github.com/user-attachments/assets/cb9793a7-4d2e-40e4-9f46-8a86a30da868" />
 
+問題90
+RenderとはWebアプリケーションやAPIを簡単に公開・運用できるクラウド型Paas（platform as a
+service）である。GitHubと連携することでコードのpushをきっかけとして自動ビルド・自動デプロイが可能となりCI/CDを容易に実現することができる。Node.jsやPython,Dockerなど多様な環境に対応し無料プランでもHTTPSや環境変数管理が利用できる。他にもHerokuやVercelといったものもある。
 
+それぞれの特徴
 
+・Heroku
+2007年に登場し「サーバー管理を意識せずwebアプリを動かしたい」というニーズから生まれたPaaSである。Rails全盛期に急速に普及し教育・プロトタイプ用途で定番となった。しかし近年無料枠の減少や十何世の低さが課題となりRenderが代替品として注目され始めている。
+
+・Vercel
+React,Next.jsの開発元が提供するサービスでフロントエンド特化のもの。
+SSR、ISR、エッジ配信に強くUI中心のWeb開発に適している。一方長時間稼働するAPIやサーバサイドは不向き
+
+・Netlify
+Jamstack（性的サイト＋API）の普及を背景に登場し静的ファイルをCDNで高速配信することに特化している。
+
+・Render
+Docker対応、柔軟な設定、無料HTTPSなどを取り入れたPaaSである。
 
 
 
