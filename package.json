@@ -1,9 +1,11 @@
 {
   "name": "100nocks",
   "version": "1.0.0",
+  "type": "module",
   "description": "HTTP（HyperText Transfer Protocol）はWeb通信の仕組みで、ブラウザとサーバ間でデータを送受信するためのプロトコル。リクエストとレスポンスで構成され、ステートレス（通信ごとに独立）なのが特徴。主にGET（取得）やPOST（送信）が使われる。現在はHTTP/1.1（汎用性・持続接続）、HTTP/2（並列通信・高速化）、HTTP/3（UDPベース・低遅延）が広く利用されて",
   "main": "main.js",
   "scripts": {
+    "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/Shintaro0330/100nocks#readme",
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^5.2.1",
     "express-session": "^1.18.2"
   }
