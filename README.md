@@ -383,6 +383,14 @@ Jamstack（性的サイト＋API）の普及を背景に登場し静的ファイ
 Docker対応、柔軟な設定、無料HTTPSなどを取り入れたPaaSである。
 
 
+問題93
+<img width="545" height="644" alt="image" src="https://github.com/user-attachments/assets/908ea373-e24d-4931-adf3-e85b6698c679" />
+
+<img width="491" height="349" alt="image" src="https://github.com/user-attachments/assets/a6b1b1bf-ad1f-48cc-9f72-16073c54bbfc" />
+
+
+
+
 
 
 
